@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+   version="6.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <servlet>
+        <servlet-name>PremiumPage</servlet-name>
+        <jsp-file>/WEB-INF/views/transaction/premium.jsp</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PremiumPage</servlet-name>
+        <url-pattern>/premium</url-pattern>
+    </servlet-mapping>
+    
+    
+<!--    <servlet>
+        <servlet-name>AdminLoginPageServlet</servlet-name>
+        <servlet-class>com.mycompany.webhuongdannauan.controller.AdminLoginPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminLoginPageServlet</servlet-name>
+        <url-pattern>/admin-login</url-pattern>
+    </servlet-mapping>-->
+    
+    
+<!--    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.mycompany.webhuongdannauan.controller.AdminLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+
+
+-->    
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>  
+        <servlet-class>com.mycompany.webhuongdannauan.controller.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <servlet-class>com.mycompany.webhuongdannauan.controller.AdminUserServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminUserServlet</servlet-name>
+        <url-pattern>/admin/users</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BlogServlet</servlet-name>
+        <servlet-class>com.mycompany.webhuongdannauan.controller.BlogServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BlogServlet</servlet-name>
+        <url-pattern>/blog</url-pattern>
+    </servlet-mapping>
+
+</web-app>
